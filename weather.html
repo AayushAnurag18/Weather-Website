@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather.io</title>
+    <link rel="stylesheet" href="weather.css" />
+    <script src="weather.js" defer></script>
+  </head>
+  <body class="h-screen w-full grid place-items-center bg-cover bg-center">
+    <div
+      class="m-auto p-[10px] bg-white/10 rounded-xl shadow-2xl backdrop-blur-md"
+    >
+      <form>
+        <input
+          class="border-2 text-2xl rounded-lg border-black px-2 py-1"
+          type="search"
+          name="search-bar"
+          id="search-bar"
+          placeholder=" Search for your city..."
+        />
+        <button
+          class="border-2 border-black text-2xl rounded-lg px-2 py-1 hover:bg-black/40"
+          type="submit"
+          id="search-icon"
+        >
+          ✔
+        </button>
+      </form>
+      <div id="vis" class="hid">
+        <h1 class="city text-3xl font-bold p-4">Weather in _____</h1>
+        <h2 class="temp p-4 text-2xl font-semibold">___ °C</h2>
+        <div class="flex">
+          <div class="description text-2xl font-semibold p-2 px-4">_____</div>
+          <img src="" alt="" class="icon" />
+        </div>
+        <div class="humidity p-4 text-xl font-medium">Humidity: ___ %</div>
+        <div class="speed p-4 text-xl font-medium">Wind Speed: __ km/hr</div>
+      </div>
+    </div>
+  </body>
+</html>
